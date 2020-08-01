@@ -1,0 +1,296 @@
+@font-face {
+    font-family: grant;
+        src: url("../fonts/GrandHotel-Regular.ttf");
+    }
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+    html, body{
+        height: 100%;
+    }
+    body{
+        min-width: 620px;
+    }
+    header{
+        width:100%;
+        height: 105%;
+        padding-top: 4%;
+        background-image: url("../img/header.png");
+        background-size:100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-origin:border-box;
+        display: block;
+        overflow: hidden;
+        text-align: center;
+    }
+    .wrapper{
+        width: 60%;
+        display: flex;
+        margin-left: 10%;
+        float: left;
+        margin-left: 15%;
+        flex-wrap: wrap;
+    }
+    .wrapper a{
+        text-decoration: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 10pt;
+        color: white;
+        font-weight: bold;
+        list-style: none;
+        margin-right:3%;
+    }
+ 
+    #logo{
+        width: 50px;
+        height: 50px;
+        margin-left: 15%;
+        background-image: url("../img/logo.png");
+        background-size:contain;
+        background-repeat: no-repeat;
+        float: left;
+    }
+    #logo2{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100px;
+        height: 100px;
+        background-image: url("../img/logo.png");
+        background-repeat: no-repeat;
+        margin-top: 15%;
+        background-size:100% 100%;
+    }
+    #text{
+        color: white;
+        font-size: 35pt;
+        margin-top: 20px;
+        letter-spacing: 1pt;
+    }
+    #fourth{
+        margin-right: 16.8%;
+    }
+    #cart{
+        background-image: url("../img/cart.png");
+        background-size: 25px 25px;
+        background-repeat: no-repeat;
+        width: 25px;
+        height: 25px;
+        background-position: bottom;
+
+    }
+    #serch{
+        background-image: url("../img/serch.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 25px;
+        height: 25px;
+        background-size: 90%;
+        background-position: bottom;
+    }
+    #content{
+        height: auto;
+        overflow: hidden;
+    }
+    #content #first{
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        font-size: 10pt;
+        color: gray;
+    }
+    #content #second{
+        background-color: black;
+        color: white;
+        height: 100px;
+    }
+    #content #second h1{
+        width: 72%;
+        text-align: end;
+        padding-top: 25px;
+    }
+    #content #second h5{
+        width: 72%;
+        font-family: grant;
+        text-align: end;
+        font-size: 20pt;
+        margin-bottom: 2px;
+    }
+    #content #third {
+        margin-left: 30%;
+    }
+    #content #third #text{
+        color: rgb(87, 87, 87);
+        width: 200px;
+        font-size: 12pt;
+        float: left;
+        text-align: center;
+        margin-left: 12%;
+    }
+    button{
+        margin-top: 25px;
+        padding: 10px;
+        background: none;
+        border: 1px solid black;
+    }
+    #content #bodycare{
+        margin-top: -120px;
+        width: 300px;
+        float: left;
+    }
+    #content2{
+        width: 100%;
+        height: fit-content;
+        background-image: url("../img/section3.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        overflow: hidden;
+        padding-bottom: 200px;
+
+    }
+    #content2 h1{
+        text-align: center;
+        font-size: 35pt;
+        color: white;
+        padding-top: 120px;
+    }
+    #content2 div{
+        float: left;
+        flex-basis: 30%;
+        margin-left: 10%;
+        text-align: center;
+    }
+    #content2 div img{
+        width: 70px;
+    }
+    #content2 div h4{
+        margin-top: 30px;
+        text-align: center;
+        color: white;
+        font-size: 20pt;
+    }
+    #content2 #images{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        margin-top: 100px;
+        padding-right: 20%;
+        overflow: hidden;
+        }
+        #content3{
+            width: 100%;
+            height: 120%;
+            background-image: url("../img/images.png");
+            background-repeat: no-repeat;
+            background-size: 50% 100%;
+            background-position: right;
+            background-origin:content-box;
+            padding-right: 10%;
+
+        }
+        #content3 #text{
+            color: rgb(87, 87, 87);
+        width: 200px;
+        font-size: 12pt;
+        text-align: center;
+        margin-top: 50px;
+        }
+        #content3 h1{
+            font-size: 20pt;
+
+        }
+        #content3 div{
+            float: left;
+            margin-top: 150px;
+            margin-left: 20%;
+            width: 200px;
+            text-align: center;
+        }
+        #content3 button{
+            margin-top: 100px;
+        }
+        footer{
+            width: 100%;
+            height: auto;
+            padding-bottom: 50px;
+            background-color: black;
+        }
+        footer img{
+            width: 100%;
+        }
+        footer #content{
+            padding-left: 15%;
+            padding-right: 15%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        footer hr{
+            flex-basis: 100%;
+            margin-top: 100px;
+            margin-bottom: 20px;
+        }
+        footer #title5{
+            flex-basis: 100%;
+        }
+        footer div{
+            flex-basis: 18%;
+            color: white;
+            font-size: 5pt;
+        }
+        footer #title1{
+            flex-basis: 30%!important;
+            margin-right: 11%!important;
+        }
+        footer #title1 p{
+            margin-top: 20px;
+            color: gray;
+            font-size: 10pt;
+        }
+        footer #title2 a, footer #title3 a, footer #title5 a{
+            display: block;
+            color: gray;
+            font-size: 10pt;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+        footer #title5 a{
+            display: inline-block;
+            float: left;
+            margin-right: 20px;
+        }
+        footer #title5 #beforeLast{
+            margin-right: 20%;
+        }
+        #lang{
+            display: inline-block;
+            margin: 0!important;
+            padding: 0!important;
+        }
+        #facebook{
+            margin-top: 50px;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-repeat: no-repeat;
+            background-image: url("../img/facebook.png");
+        }
+        #insta{
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-repeat: no-repeat;
+            background-image: url("../img/insta.png");
+        }
+        .price{
+            font-size: 15pt;
+            font-family: grant;
+            color: white;
+            line-height: 50px;
+        }
