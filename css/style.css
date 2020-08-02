@@ -140,10 +140,9 @@
         font-size: 12pt;
         float: left;
         text-align: center;
-        margin-left: 12%;
-        margin-right: 28%;
         margin-top: 20px;
     }
+
     button{
         margin-top: 25px;
         padding: 10px;
@@ -153,8 +152,9 @@
     #content #bodycare{
         margin-top: -120px;
         float: left;
+        margin-right: 12%;
     }
-    #content #bodycare img{
+    #content #bodycare{
         width: 300px;
     }
     #content #bodycare h1{
@@ -192,6 +192,7 @@
     }
     #content2 div img{
         width: 75px;
+
     }
     #content2 div h4{
         margin-top: 30px;
@@ -337,7 +338,7 @@
                 text-align: center;
             }
             #content #third #text{
-                width: 50%;
+                width: 300px;
                 text-align: center;
             }
           }
