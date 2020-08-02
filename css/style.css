@@ -12,14 +12,15 @@
         height: 100%;
     }
     body{
-        min-width: 620px;
     }
     header{
         width:100%;
-        height: 105%;
+        height: auto;
         padding-top: 4%;
+        padding-bottom: 200px;
         background-image: url("../img/header.png");
         background-size:100% 100%;
+        background-clip: border-box;
         background-repeat: no-repeat;
         background-position: center;
         background-origin:border-box;
@@ -29,11 +30,13 @@
     }
     .wrapper{
         width: 60%;
+        height: auto;
         display: flex;
-        margin-left: 10%;
         float: left;
         margin-left: 15%;
+        flex-direction: row;
         flex-wrap: wrap;
+        overflow: auto;
     }
     .wrapper a{
         text-decoration: none;
@@ -43,7 +46,7 @@
         color: white;
         font-weight: bold;
         list-style: none;
-        margin-right:3%;
+        margin-right: 20px;
     }
  
     #logo{
@@ -62,35 +65,39 @@
         height: 100px;
         background-image: url("../img/logo.png");
         background-repeat: no-repeat;
-        margin-top: 15%;
         background-size:100% 100%;
+        clear: both;
+        margin-top: 110px;
     }
     #text{
         color: white;
         font-size: 35pt;
-        margin-top: 20px;
         letter-spacing: 1pt;
+        float: left;
+        margin-top: 90px;
+        width: 100%;
     }
     #fourth{
         margin-right: 16.8%;
     }
     #cart{
         background-image: url("../img/cart.png");
-        background-size: 25px 25px;
+        background-size: 100% 100%;
         background-repeat: no-repeat;
-        width: 25px;
-        height: 25px;
-        background-position: bottom;
-
+        width: 30px;
+        height: 30px;
+        background-position: center;
+        padding: 0px;
     }
     #serch{
         background-image: url("../img/serch.png");
         background-size: 100%;
         background-repeat: no-repeat;
-        width: 25px;
-        height: 25px;
-        background-size: 90%;
-        background-position: bottom;
+        width: 30px;
+        height: 30px;
+        background-size: 100%;
+        padding: 0px;
+        background-position: center;
     }
     #content{
         height: auto;
@@ -104,11 +111,13 @@
         padding-bottom: 100px;
         font-size: 10pt;
         color: gray;
+        text-align: center;
     }
     #content #second{
         background-color: black;
         color: white;
         height: 100px;
+        clear: both;
     }
     #content #second h1{
         width: 72%;
@@ -132,6 +141,8 @@
         float: left;
         text-align: center;
         margin-left: 12%;
+        margin-right: 28%;
+        margin-top: 20px;
     }
     button{
         margin-top: 25px;
@@ -141,7 +152,14 @@
     }
     #content #bodycare{
         margin-top: -120px;
+        float: left;
+    }
+    #content #bodycare img{
         width: 300px;
+    }
+    #content #bodycare h1{
+        padding-top: 50px;
+        color: white;
         float: left;
     }
     #content2{
@@ -151,7 +169,6 @@
         background-repeat: no-repeat;
         background-size: 100% 100%;
         overflow: hidden;
-        padding-bottom: 200px;
 
     }
     #content2 h1{
@@ -163,11 +180,18 @@
     #content2 div{
         float: left;
         flex-basis: 30%;
-        margin-left: 10%;
         text-align: center;
     }
+    #content2 div div{
+        background-image: url("../img/hart.png");
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
+        background-clip: border-box;
+        background-position: top right;
+        padding-left: 12%;
+    }
     #content2 div img{
-        width: 70px;
+        width: 75px;
     }
     #content2 div h4{
         margin-top: 30px;
@@ -180,8 +204,8 @@
         width: 100%;
         flex-direction: row;
         margin-top: 100px;
-        padding-right: 20%;
         overflow: hidden;
+        align-items: space-between;
         }
         #content3{
             width: 100%;
@@ -292,5 +316,28 @@
             font-size: 15pt;
             font-family: grant;
             color: white;
-            line-height: 50px;
+            line-height: 50px;  
         }
+        @media only screen and (max-width: 720px) {
+            html{
+                min-width: 720px;
+            }
+            .wrapper{
+                width: 100%;
+                flex-wrap: nowrap;
+            }
+            #fourth{
+                margin-right: 20px;
+            }
+            #content #second h1, #content #second h5{
+                width: 100%;
+                margin: 0px;
+                float: none;
+                clear: both;
+                text-align: center;
+            }
+            #content #third #text{
+                width: 50%;
+                text-align: center;
+            }
+          }
